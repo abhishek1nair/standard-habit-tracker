@@ -1,5 +1,43 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
-
 {{outlet}}
+<header>
+  <h2>
+    Habit Tracker
+  </h2>
+</header>
+<main>
+  <section class="form">
+    <Input class="form__input" @type="text" placeholder="Add new habit" />
+    <button class="form__button" type="button">Add</button>
+  </section>
+  <section>
+    <table>
+      <thead>
+        <tr>
+          <th>
+            Habit
+          </th>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+          <th>4</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Running</th>
+          <td>X</td>
+          <td>O</td>
+          <td>X</td>
+          <td>O</td>
+        </tr>
+        <tr>
+          <th>Exercise</th>
+          <td>X</td>
+          <td>O</td>
+          <td>X</td>
+          <td>X</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</main>
